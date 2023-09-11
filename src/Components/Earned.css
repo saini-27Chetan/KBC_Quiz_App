@@ -1,0 +1,42 @@
+.lastModal{
+    border: 6px solid gold;
+    background-color: rgb(11, 4, 45);
+    border-radius: 10px;
+    width: 70%;
+    height: 60%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.endText, .winnerText{
+    position: absolute;
+    top: 20%;
+    font-size: 60px;
+    color: white;
+}
+.submitBtn{
+    position: absolute;
+    bottom: 20%;
+    padding: 10px 0px;
+    font-size: 40px;
+    width: 80%;
+    border: 3px solid gold;
+    border-radius: 20px;
+    background-color: rgb(13, 25, 73);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+}
+.submitBtn:hover{
+    background-color: rgb(220, 225, 245);
+    color: black;
+    font-weight: 600;
+}
