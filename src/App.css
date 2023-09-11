@@ -1,0 +1,79 @@
+.app{
+    height: 100vh;
+    display: flex;
+    /* background-color: rgb(19,7,57); */
+    background-color: rgb(8,1,42);
+    color: white;
+}
+
+.main{
+    width: 75%;
+    border: 2px solid white;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgb(19,7,57)),url("./SourceFiles/kbcbg.jpg")center center no-repeat ;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    height: 50%;
+    position: relative;
+}
+
+.timer{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+}
+
+.bottom{
+    height: 50%;
+
+}
+
+.pyramid{
+    width:25%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moneyList{
+    list-style: none;
+    width: 70%;
+    padding: 20px;
+}
+
+.moneyListItem{
+    display: flex;
+    align-items: center;
+    border: 2px solid gold;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.moneyListItem.active{
+    background-color: green;
+}
+
+.moneyListItemQues{
+    font-size: 18px;
+    font-weight: 100;
+    width: 20%;
+    text-align: center;
+}
+
+.moneyListItemAmount{
+    font-size: 20px;
+    font-weight: 300;
+}
