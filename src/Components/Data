@@ -1,0 +1,334 @@
+const data = [
+  {
+    id: 1,
+    question: "How many legs does a spider have?",
+    answers: [
+      {
+        text: "6",
+        correct: false,
+      },
+      {
+        text: "8",
+        correct: true,
+      },
+      {
+        text: "2",
+        correct: false,
+      },
+      {
+        text: "4",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 2,
+    question: "What is the name of the toy cowboy in Toy Story?",
+    answers: [
+      {
+        text: "Woody",
+        correct: true,
+      },
+      {
+        text: "Iron Man",
+        correct: false,
+      },
+      {
+        text: "Space Warrior",
+        correct: false,
+      },
+      {
+        text: "Agent 007",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 3,
+    question: "What is the color of an emerald?",
+    answers: [
+      {
+        text: "Red",
+        correct: false,
+      },
+      {
+        text: "Blue",
+        correct: false,
+      },
+      {
+        text: "Grey",
+        correct: false,
+      },
+      {
+        text: "Green",
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 4,
+    question: "What colors are the stars on the American flag?",
+    answers: [
+      {
+        text: "Red",
+        correct: false,
+      },
+      {
+        text: "White",
+        correct: true,
+      },
+      {
+        text: "Grey",
+        correct: false,
+      },
+      {
+        text: "Green",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 5,
+    question: "Where does Santa Claus live?",
+    answers: [
+      {
+        text: "North Pole",
+        correct: true,
+      },
+      {
+        text: "South Pole",
+        correct: false,
+      },
+      {
+        text: "Iceland",
+        correct: false,
+      },
+      {
+        text: "Greenland",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 6,
+    question: "What do caterpillars turn into?",
+    answers: [
+      {
+        text: "Crab",
+        correct: false,
+      },
+      {
+        text: "Fish",
+        correct: false,
+      },
+      {
+        text: "Butterfly",
+        correct: true,
+      },
+      {
+        text: "Worm",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 7,
+    question: "What do bees make?",
+    answers: [
+      {
+        text: "Honey",
+        correct: true,
+      },
+      {
+        text: "Silk",
+        correct: false,
+      },
+      {
+        text: "Milk",
+        correct: false,
+      },
+      {
+        text: "Cotton",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 8,
+    question: "How many days are in a year?",
+    answers: [
+      {
+        text: "390",
+        correct: false,
+      },
+      {
+        text: "100",
+        correct: false,
+      },
+      {
+        text: "256",
+        correct: false,
+      },
+      {
+        text: "365",
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 9,
+    question: "Which is the fastest land animal?",
+    answers: [
+      {
+        text: "Cheetah",
+        correct: true,
+      },
+      {
+        text: "Lion",
+        correct: false,
+      },
+      {
+        text: "Elephant",
+        correct: false,
+      },
+      {
+        text: "Zebra",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 10,
+    question: "In the nursery rhyme, who sat on a wall before having a great fall?",
+    answers: [
+      {
+        text: "Mogli",
+        correct: false,
+      },
+      {
+        text: "Doremon",
+        correct: false,
+      },
+      {
+        text: "Johny",
+        correct: false,
+      },
+      {
+        text: "Humpty Dumpty",
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 11,
+    question: "How many sides does a triangle have?",
+    answers: [
+      {
+        text: "6",
+        correct: false,
+      },
+      {
+        text: "8",
+        correct: false,
+      },
+      {
+        text: "3",
+        correct: true,
+      },
+      {
+        text: "8",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 12,
+    question: "Which planet in our Solar System is known for having a ring?",
+    answers: [
+      {
+        text: "Earth",
+        correct: false,
+      },
+      {
+        text: "Saturn",
+        correct: true,
+      },
+      {
+        text: "Pluto",
+        correct: false,
+      },
+      {
+        text: "Jupiter",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 13,
+    question: "Which country is home to the kangaroo?",
+    answers: [
+      {
+        text: "Australia",
+        correct: true,
+      },
+      {
+        text: "India",
+        correct: false,
+      },
+      {
+        text: "China",
+        correct: false,
+      },
+      {
+        text: "England",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 14,
+    question: "Which place is called 'the happiest place in the world'?",
+    answers: [
+      {
+        text: "Worlds of Wonder",
+        correct: false,
+      },
+      {
+        text: "Jurassic Park",
+        correct: false,
+      },
+      {
+        text: "China Town",
+        correct: false,
+      },
+      {
+        text: "Disney World",
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 15,
+    question: "Who is the GOAT of Cricket?",
+    answers: [
+      {
+        text: "Babar Azam",
+        correct: false,
+      },
+      {
+        text: "Virat Kholi",
+        correct: true,
+      },
+      {
+        text: "David Warner",
+        correct: false,
+      },
+      {
+        text: "Joe Root",
+        correct: false,
+      },
+    ],
+  }
+];
+
+export default data;
